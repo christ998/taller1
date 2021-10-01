@@ -40,22 +40,25 @@
         </div>
     </nav>
 </header>
-<section class="row justify-content-center">
-    <div class="col-5">
-        <div class="mb-3">
-            <label for="nombreComentario" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombreComentario"
-                   placeholder="Nombre">
+<section class="">
+    <form class="row justify-content-center" onsubmit="deployComment()">
+
+        <div class="col-5">
+            <div class="mb-3">
+                <label for="nombreComentario" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombreComentario"
+                       placeholder="Nombre" minlength="3">
+            </div>
+            <div class="mb-3">
+                <label for="comentarios" class="form-label">Comentarios</label>
+                <textarea maxlength="200" class="form-control" id="comentarios"
+                          rows="8"></textarea>
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+            </div>
         </div>
-        <div class="mb-3">
-            <label for="comentarios" class="form-label">Comentarios</label>
-            <textarea maxlength="200" class="form-control" id="comentarios"
-                      rows="8"></textarea>
-        </div>
-        <div class="">
-            <button type="submit" onclick="deployComment()" class="btn btn-primary mb-3">Enviar</button>
-        </div>
-    </div>
+    </form>
 
 </section>
 
@@ -72,7 +75,6 @@
                                 <div class="d-flex flex-start">
 
                                     <div class="flex-grow-1 flex-shrink-1" id="tablaComentarios">
-
 
 
                                     </div>
