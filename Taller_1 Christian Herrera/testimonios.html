@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentarios</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+<header>
+    <nav id="barra" class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a href="landing.html" id="logo" class="">Gastify</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarToggleExternalContent" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="me-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Caracteristicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="row justify-content-center">
+    <div class="col-5">
+        <div class="mb-3">
+            <label for="nombreComentario" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombreComentario"
+                   placeholder="Nombre">
+        </div>
+        <div class="mb-3">
+            <label for="comentarios" class="form-label">Comentarios</label>
+            <textarea maxlength="200" class="form-control" id="comentarios"
+                      rows="8"></textarea>
+        </div>
+        <div class="">
+            <button type="submit" onclick="deployComment()" class="btn btn-primary mb-3">Enviar</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="gradient-custom">
+    <div class="container my-5 py-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-12 col-lg-10 col-xl-8">
+                <div class="card">
+                    <div class="card-body p-4">
+                        <h4 class="text-center mb-4 pb-2">Comentarios recientes</h4>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex flex-start">
+
+                                    <div class="flex-grow-1 flex-shrink-1" id="tablaComentarios">
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+<script src="codigoTestimonios.js"></script>
+
+</html>
